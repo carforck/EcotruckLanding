@@ -1,7 +1,7 @@
 # 🚚 EcoTruck Landing Page: El Mapa de la Recolección Inteligente en Cartagena
 
 <p align="center">
-  <img src="https://i.imgur.com/Tu6Xw7K.png" alt="EcoTruck Logo" width="350"/>
+  <img src="[https://i.imgur.com/Tu6Xw7K.png](https://drive.google.com/file/d/1636MNQPLSaoKsFfpg6JFa9wifOYRsVd0/view?usp=sharing)" alt="EcoTruck Logo" width="350"/>
 </p>
 
 ## ✨ La Misión
