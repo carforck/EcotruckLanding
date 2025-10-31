@@ -8587,18 +8587,22 @@
                   "hd": false
                 },
                 {
-                  "ty": "st",
-                  "c": { "a": 0, "k": [1, 0.823528992896, 0, 1], "ix": 3 },
-                  "o": { "a": 0, "k": 0, "ix": 4 },
-                  "w": { "a": 0, "k": 5, "ix": 5 },
-                  "lc": 1,
-                  "lj": 1,
-                  "ml": 4,
-                  "bm": 0,
-                  "nm": "Stroke 1",
-                  "mn": "ADBE Vector Graphic - Stroke",
-                  "hd": false
-                },
+  "ty": "st",
+  "c": { 
+    "a": 0, 
+    "k": [1, 1, 1, 1], 
+    "ix": 3 
+  },
+  "o": { "a": 0, "k": 0, "ix": 4 },
+  "w": { "a": 0, "k": 5, "ix": 5 },
+  "lc": 1,
+  "lj": 1,
+  "ml": 4,
+  "bm": 0,
+  "nm": "Stroke 1",
+  "mn": "ADBE Vector Graphic - Stroke",
+  "hd": false
+},
                 {
                   "ty": "gf",
                   "o": { "a": 0, "k": 97, "ix": 10 },

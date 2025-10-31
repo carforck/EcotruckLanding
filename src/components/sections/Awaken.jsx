@@ -36,21 +36,22 @@ const slides = [
     text: "La tecnología impulsa un modelo de recolección inteligente y eficiente.",
     position: "items-start justify-center text-left pl-10",
   },
-  {
-    id: 3,
-    img: fondo3,
-    title: (
-      <>
-        Innovación{" "}
-        <span className="bg-[#A6E22E] text-[#014D40] px-2 rounded-md">
-          verde
-        </span>{" "}
-        en movimiento
-      </>
-    ),
-    text: "Seguimiento en tiempo real y rutas optimizadas para un futuro sostenible.",
-    position: "items-center justify-end text-right pr-16",
-  },
+ {
+  id: 3,
+  img: fondo3,
+  title: (
+    <>
+      Innovación{" "}
+      <span className="bg-[#A6E22E] text-[#014D40] px-2 rounded-md">
+        verde
+      </span>{" "}
+      en movimiento
+    </>
+  ),
+  text: "Seguimiento en tiempo real y rutas optimizadas para un futuro sostenible.",
+  position: "items-end justify-center text-right pr-10",
+},
+
   {
     id: 4,
     img: fondo5,
