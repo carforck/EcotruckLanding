@@ -1,13 +1,36 @@
+// src/App.jsx
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Awaken from "./components/sections/Awaken";
+import PulseOfTheCity from "./components/sections/PulseOfTheCity";
+import EchoOfTheProblem from "./components/sections/EchoOfTheProblem";
+import TheSolutionSpeaks from "./components/sections/TheSolutionSpeaks";
+import TheMachineBehind from "./components/sections/TheMachineBehind";
+import ImpactRipple from "./components/sections/ImpactRipple";
+import VoicesOfChange from "./components/sections/VoicesOfChange";
+import CallToActionFinal from "./components/sections/CallToActionFinal";
+import EchoFade from "./components/sections/EchoFade";
+import { ThemeProvider } from "./context/ThemeContext";
+
 function App() {
   return (
-    <div className="min-h-screen bg-green-100 flex flex-col items-center justify-center text-center p-6">
-      <h1 className="text-4xl font-bold text-green-700 mb-4">
-        EcoTruck está en marcha 🚛🌱
-      </h1>
-      <p className="text-lg text-gray-700">
-        Tailwind CSS está funcionando correctamente.
-      </p>
-    </div>
+    <ThemeProvider>
+      <div className="font-agrandir bg-[#F5F7F4] text-[#1A1A1A]">
+        <Navbar />
+
+        <Awaken />
+        <PulseOfTheCity />
+        <EchoOfTheProblem />
+        <TheSolutionSpeaks />
+        <TheMachineBehind />
+        <ImpactRipple />
+        <VoicesOfChange />
+        <CallToActionFinal />
+        <EchoFade />
+
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

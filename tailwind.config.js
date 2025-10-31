@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        agrandir: ['PPAgrandir'], // ✅ Fuente principal sin fallback
+
+      },
       colors: {
         eco: {
           dark: "#014D40",
@@ -12,10 +16,16 @@ export default {
           gray: "#1A1A1A",
         },
       },
-      fontFamily: {
-        sans: ["Poppins", "Inter", "sans-serif"],
+      keyframes: {
+        shine: {
+          "0%": { backgroundPosition: "200% 0" },
+          "100%": { backgroundPosition: "-200% 0" },
+        },
+      },
+      animation: {
+        shine: "shine 2s linear infinite",
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
