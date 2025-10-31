@@ -3,7 +3,7 @@ import { useInViewAnimate } from "../../hooks/useInViewAnimate";
 import { ChevronDown } from "lucide-react";
 import Lottie from "lottie-react";
 // Importación del archivo Lottie
-import streetViewMapLoader from "../../assets/lottie/Street-View-Map-Loader.json"; 
+import streetViewMapLoader from "../../assets/lottie/Street-View-Map-Loader.json";
 
 export default function PulseOfTheCity() {
   // Configuración del hook de animación
@@ -20,10 +20,9 @@ export default function PulseOfTheCity() {
       <div className="absolute inset-0 opacity-10 bg-[url('/src/assets/images/map-bg.svg')] bg-cover bg-center" />
       <div className="absolute inset-0 bg-linear-to-t from-[#014D40]/60 via-transparent to-[#1A1A1A]/50" />
       <div className="absolute z-0 w-[120%] h-[120%] bg-[radial-gradient(circle_at_center,rgba(166,226,46,0.15) 0%,transparent 70%)] animate-pulse-slow" />
-      
+
       {/* Contenido dividido */}
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-7xl w-full py-20">
-        
         {/* Columna izquierda: texto */}
         <div className="space-y-6 md:space-y-8 text-center md:text-left">
           <m.h2
@@ -80,7 +79,6 @@ export default function PulseOfTheCity() {
 
           {/* Bloque de Contadores / Stats */}
           <div className="text-sm text-white/70 flex flex-col md:flex-row gap-2 md:gap-6 items-center justify-center md:justify-start pt-4">
-            
             {/* Stat 1 */}
             <motion.span
               initial={{ opacity: 0 }}
@@ -89,7 +87,7 @@ export default function PulseOfTheCity() {
             >
               <motion.span
                 initial={{ count: 0 }}
-                animate={inView ? { count: 12000 } : {}} 
+                animate={inView ? { count: 12000 } : {}}
                 transition={{ duration: 2, ease: "easeOut" }}
               >
                 {({ count }) => (
@@ -102,8 +100,8 @@ export default function PulseOfTheCity() {
             </motion.span>
 
             {/* Separador invisible en móvil, visible como punto en desktop */}
-            <span className="hidden md:inline-block">•</span> 
-            
+            <span className="hidden md:inline-block">•</span>
+
             {/* Stat 2 */}
             <motion.span
               initial={{ opacity: 0 }}
@@ -112,7 +110,7 @@ export default function PulseOfTheCity() {
             >
               <motion.span
                 initial={{ count: 0 }}
-                animate={inView ? { count: 8 } : {}} 
+                animate={inView ? { count: 8 } : {}}
                 transition={{ duration: 1.5, ease: "easeOut" }}
               >
                 {({ count }) => (
@@ -134,7 +132,7 @@ export default function PulseOfTheCity() {
             >
               <motion.span
                 initial={{ count: 0 }}
-                animate={inView ? { count: 3500 } : {}} 
+                animate={inView ? { count: 3500 } : {}}
                 transition={{ duration: 2, ease: "easeOut" }}
               >
                 {({ count }) => (
@@ -160,7 +158,7 @@ export default function PulseOfTheCity() {
 
           {/* Botón de CTA */}
           <m.a
-            href="#solucion"
+            href="http://localhost:5175/login"
             variants={animation}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
@@ -175,10 +173,10 @@ export default function PulseOfTheCity() {
         {/* Columna derecha: Animación Lottie */}
         <div className="flex justify-center mt-10 md:mt-0">
           <Lottie
-            animationData={streetViewMapLoader} 
+            animationData={streetViewMapLoader}
             loop={true}
             // TAMAÑO RESPONSIVE: Controlamos el tamaño máximo para que no sea muy grande
-            className="w-full max-w-sm sm:max-w-md lg:max-w-xl" 
+            className="w-full max-w-sm sm:max-w-md lg:max-w-xl"
           />
         </div>
       </div>

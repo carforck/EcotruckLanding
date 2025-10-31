@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.6.0",
+    "aos": "^2.3.4",
     "daisyui": "^5.3.10",
     "framer-motion": "^12.23.24",
     "gsap": "^3.13.0",
