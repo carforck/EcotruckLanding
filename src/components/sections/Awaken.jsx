@@ -12,7 +12,7 @@ const slides = [
     title: (
       <>
         EcoTruck{" "}
-        <span className="bg-[#A6E22E] text-[#014D40] px-2 rounded-md">
+        <span className=" bg-[#A6E22E] text-[#014D40] px-2 rounded-md">
           despierta
         </span>{" "}
         a una nueva era
@@ -81,8 +81,7 @@ export default function Awaken() {
 
   const prevSlide = () =>
     setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
-  const nextSlide = () =>
-    setCurrent((prev) => (prev + 1) % slides.length);
+  const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -92,7 +91,9 @@ export default function Awaken() {
           <div
             key={slide.id}
             className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
-              i === current ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+              i === current
+                ? "opacity-100 z-10"
+                : "opacity-0 z-0 pointer-events-none"
             }`}
           >
             {/* Imagen de fondo */}

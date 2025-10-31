@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        agrandir: ['PPAgrandir'], // ✅ Fuente principal sin fallback
-
+        grotesk: ['"Space Grotesk"', "sans-serif"], // ✅ Fuente principal aplicada
       },
       colors: {
         eco: {

@@ -1,4 +1,3 @@
-// src/App.jsx
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Awaken from "./components/sections/Awaken";
@@ -15,7 +14,7 @@ import { ThemeProvider } from "./context/ThemeContext";
 function App() {
   return (
     <ThemeProvider>
-      <div className="font-agrandir bg-[#F5F7F4] text-[#1A1A1A]">
+      <div className="font-grotesk bg-[#F5F7F4] text-[#1A1A1A]">
         <Navbar />
 
         <Awaken />
