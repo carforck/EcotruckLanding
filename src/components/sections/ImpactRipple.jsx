@@ -23,7 +23,8 @@ export default function ImpactRipple() {
       <div className="flex flex-wrap justify-center gap-6 md:gap-8 max-w-5xl mx-auto">
         {/* Tarjeta ODS 11 */}
         {/* Tarjeta ODS 11 */}
-        <div className="group perspective w-full sm:w-[280px] h-[320px]">
+        <div className="group perspective w-full sm:w-72 h-80">
+
           <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
             {/* Frente */}
             <div className="absolute w-full h-full backface-hidden bg-white rounded-xl shadow-lg border-t-4 border-[#A6E22E] overflow-hidden">
@@ -52,7 +53,8 @@ export default function ImpactRipple() {
         </div>
 
         {/* Tarjeta ODS 13 */}
-        <div className="group perspective w-full sm:w-[280px] h-[320px]">
+       <div className="group perspective w-full sm:w-72 h-80">
+
           <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
             {/* Frente */}
             <div className="absolute w-full h-full backface-hidden bg-white rounded-xl shadow-lg border-t-4 border-[#A6E22E] overflow-hidden">
@@ -80,7 +82,8 @@ export default function ImpactRipple() {
         </div>
 
         {/* Tarjeta ODS 3 */}
-        <div className="group perspective w-full sm:w-[280px] h-[320px]">
+        <div className="group perspective w-full sm:w-72 h-80">
+
           <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
             {/* Frente */}
             <div className="absolute w-full h-full backface-hidden bg-white rounded-xl shadow-lg border-t-4 border-[#A6E22E] overflow-hidden">
