@@ -4,19 +4,19 @@ import { Player } from "@lottiefiles/react-lottie-player";
 export default function TheSolutionSpeaks() {
   const solutions = [
     {
-      icon: "/src/assets/lottie/Pick-up Pin.json",
+      icon: "/lottie/Pick-up Pin.json",
       title: "Tracking en tiempo real",
       description:
         "Conoce dónde está tu camión de aseo en este momento y su hora estimada de llegada.",
     },
     {
-      icon: "/src/assets/lottie/Nyt-Mesaj.json",
+      icon: "/lottie/Nyt-Mesaj.json",
       title: "Comunicación directa",
       description:
         "Conecta la empresa y la comunidad a través de alertas instantáneas y canales sin intermediarios.",
     },
     {
-      icon: "/src/assets/lottie/Sucesso.json",
+      icon: "/lottie/Sucesso.json",
       title: "Eficiencia y transparencia",
       description:
         "Datos abiertos, rutas optimizadas y decisiones inteligentes para una Cartagena sostenible.",
@@ -67,7 +67,7 @@ export default function TheSolutionSpeaks() {
 
       {/* CTA */}
       <a
-        href="http://localhost:5175/login"
+        href="/login"
         className="inline-block mt-12 px-6 py-3 bg-[#A6E22E] text-[#014D40] font-semibold rounded-full shadow-md hover:scale-105 transition-transform"
       >
         Ver cómo funciona
