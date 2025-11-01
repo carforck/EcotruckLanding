@@ -22,14 +22,12 @@ export default function ImpactRipple() {
       {/* Tarjetas con efecto flip */}
       <div className="flex flex-wrap justify-center gap-6 md:gap-8 max-w-5xl mx-auto">
         {/* Tarjeta ODS 11 */}
-        {/* Tarjeta ODS 11 */}
         <div className="group perspective w-full sm:w-72 h-80">
-
           <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
             {/* Frente */}
             <div className="absolute w-full h-full backface-hidden bg-white rounded-xl shadow-lg border-t-4 border-[#A6E22E] overflow-hidden">
               <img
-                src="/src/assets/ods/E_GIF_11.gif"
+                src="/ods/E_GIF_11.gif"
                 alt="ODS 11"
                 className="absolute inset-0 w-full h-full object-cover"
               />
@@ -53,17 +51,17 @@ export default function ImpactRipple() {
         </div>
 
         {/* Tarjeta ODS 13 */}
-       <div className="group perspective w-full sm:w-72 h-80">
-
+        <div className="group perspective w-full sm:w-72 h-80">
           <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
             {/* Frente */}
             <div className="absolute w-full h-full backface-hidden bg-white rounded-xl shadow-lg border-t-4 border-[#A6E22E] overflow-hidden">
               <img
-                src="/src/assets/ods/E_GIF_13.gif"
-                alt="ODS 11"
+                src="/ods/E_GIF_13.gif"
+                alt="ODS 13"
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
+
             {/* Reverso */}
             <a
               href="https://www.un.org/sustainabledevelopment/climate-change/"
@@ -83,16 +81,16 @@ export default function ImpactRipple() {
 
         {/* Tarjeta ODS 3 */}
         <div className="group perspective w-full sm:w-72 h-80">
-
           <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
             {/* Frente */}
             <div className="absolute w-full h-full backface-hidden bg-white rounded-xl shadow-lg border-t-4 border-[#A6E22E] overflow-hidden">
               <img
-                src="/src/assets/ods/E_GIF_03.gif"
-                alt="ODS 11"
+                src="/ods/E_GIF_03.gif"
+                alt="ODS 3"
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
+
             {/* Reverso */}
             <a
               href="https://www.un.org/sustainabledevelopment/health/"
@@ -121,7 +119,7 @@ export default function ImpactRipple() {
 
       {/* CTA */}
       <a
-        href="http://localhost:5175/login"
+        href="/login"
         className="inline-block mt-10 px-6 py-3 bg-[#A6E22E] text-[#014D40] font-semibold rounded-full shadow-md hover:scale-105 transition-transform"
       >
         Quiero ser parte del cambio
