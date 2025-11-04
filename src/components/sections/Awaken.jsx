@@ -4,6 +4,7 @@ import fondo6 from "../../assets/images/fondo6.png";
 import fondo2 from "../../assets/images/fondo2.jpg";
 import fondo3 from "../../assets/images/fondo3.jpg";
 import fondo5 from "../../assets/images/fondo5.jpeg";
+import logo from "../../assets/logos/logoEcoTruck.svg";
 
 const slides = [
   {

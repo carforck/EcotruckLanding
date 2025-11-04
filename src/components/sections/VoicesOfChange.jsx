@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import moisesImg from "../../assets/images/moises.png";
 import carlosImg from "../../assets/images/carlos.jpeg";
 import JoshImg from "../../assets/images/josh.jpeg";
-
+import osmarImg from "../../assets/images/osmar.jpg";
 export default function VoicesOfChange() {
   const team = [
     { name: "Moisés Ruiz", role: "Backend Developer", photo: moisesImg },
@@ -11,7 +11,7 @@ export default function VoicesOfChange() {
     {
       name: "Osmar Torres",
       role: "Diseñador UI/UX",
-      photo: "https://randomuser.me/api/portraits/men/32.jpg",
+      photo: osmarImg,
     },
     {
       name: "Josh Vanegas",
