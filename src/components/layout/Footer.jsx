@@ -7,8 +7,8 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-// ✅ Corrección: usar ruta absoluta desde public
-const logo = "/public/logos/logoEcoTruck.svg";
+// ✅ Ruta pública directa desde /public
+const logo = "/logos/LogoEcoTruck.svg";
 
 export default function Footer() {
   return (
