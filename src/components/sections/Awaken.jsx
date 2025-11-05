@@ -1,10 +1,8 @@
-// src/components/sections/Awaken.jsx
 import { useEffect, useState } from "react";
 import fondo6 from "../../assets/images/fondo6.png";
 import fondo2 from "../../assets/images/fondo2.jpg";
 import fondo3 from "../../assets/images/fondo3.jpg";
 import fondo5 from "../../assets/images/fondo5.jpeg";
-import logo from "../../assets/logos/logoEcoTruck.svg";
 
 const slides = [
   {
@@ -13,15 +11,15 @@ const slides = [
     title: (
       <>
         EcoTruck{" "}
-        <span className=" bg-[#A6E22E] text-[#014D40] px-2 rounded-md">
+        <span className="bg-[#A6E22E] text-[#014D40] px-2 rounded-md">
           despierta
         </span>{" "}
         a una nueva era
       </>
     ),
     text: "Cartagena inicia su camino hacia una ciudad más limpia, tecnológica y sostenible.",
-    // CLASES RESPONSIVE PARA LA POSICIÓN: Centrado por defecto, ajustado para desktop
-    position: "items-center justify-center text-center md:items-center md:justify-end md:pb-24", 
+    position:
+      "items-center justify-center text-center md:items-center md:justify-end md:pb-24",
   },
   {
     id: 2,
@@ -36,8 +34,8 @@ const slides = [
       </>
     ),
     text: "La tecnología impulsa un modelo de recolección inteligente y eficiente.",
-    // CLASES RESPONSIVE PARA LA POSICIÓN
-    position: "items-center justify-center text-center md:items-start md:justify-center md:pl-10 md:text-left",
+    position:
+      "items-center justify-center text-center md:items-start md:justify-center md:pl-10 md:text-left",
   },
   {
     id: 3,
@@ -52,10 +50,9 @@ const slides = [
       </>
     ),
     text: "Seguimiento en tiempo real y rutas optimizadas para un futuro sostenible.",
-    // CLASES RESPONSIVE PARA LA POSICIÓN
-    position: "items-center justify-center text-center md:items-end md:justify-center md:pr-10 md:text-right",
+    position:
+      "items-center justify-center text-center md:items-end md:justify-center md:pr-10 md:text-right",
   },
-
   {
     id: 4,
     img: fondo5,
@@ -69,15 +66,14 @@ const slides = [
       </>
     ),
     text: "Conectando comunidades con el poder de la tecnología limpia.",
-    // CLASES RESPONSIVE PARA LA POSICIÓN
-    position: "items-center justify-center text-center md:items-start md:justify-center md:pl-10 md:text-left",
+    position:
+      "items-center justify-center text-center md:items-start md:justify-center md:pl-10 md:text-left",
   },
 ];
 
 export default function Awaken() {
   const [current, setCurrent] = useState(0);
 
-  // Autoplay cada 6 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
@@ -91,7 +87,6 @@ export default function Awaken() {
 
   return (
     <section className="relative h-screen w-full overflow-hidden">
-      {/* Carrusel */}
       <div className="relative w-full h-full">
         {slides.map((slide, i) => (
           <div
@@ -102,17 +97,12 @@ export default function Awaken() {
                 : "opacity-0 z-0 pointer-events-none"
             }`}
           >
-            {/* Imagen de fondo */}
             <img
               src={slide.img}
               alt="Fondo EcoTruck"
               className="w-full h-full object-cover object-center"
             />
-
-            {/* Capa de oscurecimiento para mejor contraste en el texto */}
-            <div className="absolute inset-0 bg-black/40"></div> 
-
-            {/* Contenedor de Texto */}
+            <div className="absolute inset-0 bg-black/40"></div>
             <div
               className={`absolute inset-0 flex flex-col ${slide.position} text-white px-6 transition-all duration-700`}
             >
@@ -127,7 +117,6 @@ export default function Awaken() {
         ))}
       </div>
 
-      {/* Botones de Navegación */}
       <div className="absolute inset-x-0 top-1/2 flex justify-between items-center px-4 transform -translate-y-1/2 z-20">
         <button
           onClick={prevSlide}
@@ -143,7 +132,6 @@ export default function Awaken() {
         </button>
       </div>
 
-      {/* Indicadores (Puntos inferiores) */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
         {slides.map((_, i) => (
           <button

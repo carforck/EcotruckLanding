@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap para indexación
+Sitemap: https://ecotruck-landing.vercel.app/sitemap.xml
+
+# Reglas adicionales (opcional)
+# Disallow: /admin/
+# Disallow: /private/
