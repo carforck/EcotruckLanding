@@ -67,7 +67,7 @@ export default function TheSolutionSpeaks() {
 
       {/* CTA */}
       <a
-        href="/login"
+        href="https://ecotruck-usuarios.vercel.app"
         className="inline-block mt-12 px-6 py-3 bg-[#A6E22E] text-[#014D40] font-semibold rounded-full shadow-md hover:scale-105 transition-transform"
       >
         Ver cómo funciona
