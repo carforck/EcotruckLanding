@@ -10,11 +10,11 @@ export default function PulseOfTheCity() {
     <section
       id="inicio"
       ref={ref}
-      className="relative min-h-screen py-20 md:py-0 flex items-center justify-center overflow-hidden bg-gradient-to-b from-[#014D40] to-[#1A1A1A] text-white px-4 sm:px-6"
+      className="relative min-h-screen py-20 md:py-0 flex items-center justify-center overflow-hidden bg-linear-to-b from-[#014D40] to-[#1A1A1A] text-white px-4 sm:px-6"
     >
       {/* Fondo animado */}
       <div className="absolute inset-0 opacity-10 bg-[url('/images/map-bg.svg')] bg-cover bg-center" />
-      <div className="absolute inset-0 bg-gradient-to-t from-[#014D40]/60 via-transparent to-[#1A1A1A]/50" />
+      <div className="absolute inset-0 bg-linear-to-t from-[#014D40]/60 via-transparent to-[#1A1A1A]/50" />
       <div className="absolute z-0 w-[120%] h-[120%] bg-[radial-gradient(circle_at_center,rgba(166,226,46,0.15)_0%,transparent_70%)] animate-pulse-slow" />
 
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-7xl w-full py-20">
@@ -88,7 +88,7 @@ export default function PulseOfTheCity() {
           </m.blockquote>
 
           <m.a
-            href="/login"
+            href="https://ecotruck-usuarios.vercel.app"
             variants={animation}
             initial="hidden"
             animate={inView ? "visible" : "hidden"}

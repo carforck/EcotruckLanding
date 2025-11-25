@@ -42,7 +42,7 @@ export default function CallToActionFinal() {
 
       {/* Botón CTA con animación */}
       <a
-        href="http://localhost:5175/login"
+        href="https://ecotruck-usuarios.vercel.app"
         className="inline-block bg-[#A6E22E] text-[#014D40] px-8 py-3 md:px-10 md:py-4 
                    rounded-full font-bold text-lg md:text-xl shadow-xl 
                    hover:bg-[#FFC300] hover:scale-[1.03] transition-all duration-300 transform"

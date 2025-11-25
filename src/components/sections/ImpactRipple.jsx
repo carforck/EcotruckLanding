@@ -119,7 +119,7 @@ export default function ImpactRipple() {
 
       {/* CTA */}
       <a
-        href="/login"
+        href="https://ecotruck-usuarios.vercel.app"
         className="inline-block mt-10 px-6 py-3 bg-[#A6E22E] text-[#014D40] font-semibold rounded-full shadow-md hover:scale-105 transition-transform"
       >
         Quiero ser parte del cambio
